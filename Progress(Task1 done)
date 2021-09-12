@@ -1,0 +1,36 @@
+Task 0
+
+Done with installation of OS
+Done with installation of ROS	
+
+
+Task 1
+
+Made the catkin workspace
+commands:=
+	source /opt/ros/noetic/setup.bash   //Should be done already while installing
+	mkdir -p ~/catkin_ws/src
+	cd ~/catkin_ws/
+	catkin_make
+
+Source it :
+ 
+	source devel/setup.bash
+	
+Creating a Package:
+	 
+	 Move over to catkinws src directory by running "cd~/catkin_ws/src"
+ 	 catkin_create_pkg beginner_tutorials std_msgs rospy roscpp      //Creates a package
+ 	 
+        Update the same in the catkin workspace
+ 	cd~/catkin_ws
+ 	catkin_make
+ 
+Add it to the ROS environment
+ 	. ~/catkin_ws/devel/setup.bash
+ 		 
+
+Started the turtlesim node and explored the commands
+Used rqt_graph
+
+Made 2 scripts and sent custom messages by Talker and Listener
